@@ -59,5 +59,10 @@ def calculate():
             result = num1 / num2
             result_label.config(text="Result: " + str(result))
 # Asking user if they want to try again or not
-#Prints Thank you and closes the program 
+    choice = messagebox.askyesno("Try again?", "Do you want to try again?")
+    #Creates a pop-up Thank you message and closes the program
+    if not choice:
+        messagebox.showinfo("Thank you message", "Thank you!")
+        window.destroy()
+
 # Create the GUI
