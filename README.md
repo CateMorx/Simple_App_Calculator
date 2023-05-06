@@ -41,3 +41,6 @@ Tkinter offers the following features:
 -Controlling Layout With Geometry Managers
 
 -Making Your Applications Interactive
+
+# Installation
+If you are using Python version 3.x, then tkinter is included in the standard Python library, so there is no need to download it separately. It should already be available as long as you have the current version of Python installed on your computer.
