@@ -14,6 +14,9 @@ This program portrays the following features:
 
 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
+
+# Demo
+![Alt Text](Simple_calculator_demo.gif)
 # Needed Module
 Tkinter
 
