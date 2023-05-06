@@ -5,8 +5,13 @@
 #5. If yes, repeat Step 1. 6. If no, Display “Thank you!” and the program will exit 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
 #Imports necessary elements
+import tkinter as tkinter
+from tkinter import messagebox
 #Creates Method For Calculator
+def calculate():
 # Displaying options for operation
+    operation_label.config(text="Choose an operation:")
+    operation_options.config(text="1-Addition \n2-Subtraction \n3-Multiplication \n4-Division")
 #Gets User Input For Operation
 #If Invalid input, shows error message and prompts user to enter again
 # Asking for the first number
