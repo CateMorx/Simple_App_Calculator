@@ -90,3 +90,15 @@ num1_entry.pack()
 #Input widget for second number
 num2_entry = tkinter.Entry(window)
 num2_entry.pack()
+
+#Button for Calculation
+calculate_button = tkinter.Button(window, text="Calculate", command=calculate)
+calculate_button.pack()
+
+result_label = tkinter.Label(window, text="")
+result_label.pack()
+
+# Set window size
+window.geometry("400x300")
+
+window.mainloop()
