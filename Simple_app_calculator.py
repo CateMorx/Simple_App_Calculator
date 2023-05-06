@@ -22,7 +22,7 @@ def calculate():
             break
         except ValueError:
             return messagebox.showerror("Error on Chosen Operation", "Invalid Input, Please Choose a Number Between 1-4 For the Operation")
-# Asking for the first number
+    # Asking for the first number
     while True:
         try:
             num1 = float(num1_entry.get())
@@ -32,8 +32,17 @@ def calculate():
             break
         except ValueError:
             return messagebox.showerror("Error on First Number Entry", "Invalid Input, Please Enter a Number")
-# Asking for the second number
-# Performing the calculations
+    # Asking for the second number
+    while True:
+        try:
+            num2 = float(num2_entry.get())
+            #If Invalid input, shows error message and prompts user to enter again
+            if not isinstance(num2, float):
+                raise ValueError
+            break
+        except ValueError:
+            return messagebox.showerror("Error on Second Number Entry", "Invalid Input, Please Enter a Number")
+    # Performing the calculations
 # Asking user if they want to try again or not
 #Prints Thank you and closes the program 
 # Create the GUI
