@@ -65,8 +65,13 @@ def calculate():
         result_label.config(text="Result: " + str(result))
     # Performing the division operation 
     elif operation == 4:
+        try:
             result = num1 / num2
             result_label.config(text="Result: " + str(result))
+        #Does not allow zero division
+        except ZeroDivisionError:
+            num2_entry.delete(0, tkinter.END)
+            return messagebox.showerror("Error on Second Number Entry", "Invalid Input, Cannot Divide by Zero")
 # Asking user if they want to try again or not
     choice = messagebox.askyesno("Try again?", "Do you want to try again?")
     #Creates a pop-up Thank you message and closes the program
