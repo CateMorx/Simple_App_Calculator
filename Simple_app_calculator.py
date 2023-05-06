@@ -98,10 +98,16 @@ operation_entry = tkinter.Entry(window)
 operation_entry.pack()
 
 #Input widget for first number
+num1_entry_label = tkinter.Label(window, text="Enter your first number:")
+num1_entry_label.pack()
+
 num1_entry = tkinter.Entry(window)
 num1_entry.pack()
 
 #Input widget for second number
+num2_entry_label = tkinter.Label(window, text="Enter your second number:")
+num2_entry_label.pack()
+
 num2_entry = tkinter.Entry(window)
 num2_entry.pack()
 
