@@ -12,8 +12,16 @@ def calculate():
 # Displaying options for operation
     operation_label.config(text="Choose an operation:")
     operation_options.config(text="1-Addition \n2-Subtraction \n3-Multiplication \n4-Division")
-#Gets User Input For Operation
-#If Invalid input, shows error message and prompts user to enter again
+    #Gets User Input For Operation
+    while True:
+        try:
+            operation = int(operation_entry.get())
+            #If Invalid input, shows error message and prompts user to enter again
+            if operation > 4 or operation < 1:
+                raise ValueError
+            break
+        except ValueError:
+            return messagebox.showerror("Error on Chosen Operation", "Invalid Input, Please Choose a Number Between 1-4 For the Operation")
 # Asking for the first number
 #If Invalid input, shows error message and prompts user to enter again
 # Asking for the second number
