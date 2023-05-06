@@ -16,31 +16,40 @@ def calculate():
     while True:
         try:
             operation = int(operation_entry.get())
-            #If Invalid input, shows error message and prompts user to enter again
+            #If Invalid input, prompts user to enter again
             if operation > 4 or operation < 1:
                 raise ValueError
             break
         except ValueError:
+             #clears user's initial input
+            operation_entry.delete(0, tkinter.END)
+            #Shows pop-up error message
             return messagebox.showerror("Error on Chosen Operation", "Invalid Input, Please Choose a Number Between 1-4 For the Operation")
     # Asking for the first number
     while True:
         try:
             num1 = float(num1_entry.get())
-            #If Invalid input, shows error message and prompts user to enter again
+            #If Invalid input, prompts user to enter again
             if not isinstance(num1, float):
                 raise ValueError
             break
         except ValueError:
+            #clears user's initial input
+            num1_entry.delete(0, tkinter.END)
+            #Shows pop-up error message
             return messagebox.showerror("Error on First Number Entry", "Invalid Input, Please Enter a Number")
     # Asking for the second number
     while True:
         try:
             num2 = float(num2_entry.get())
-            #If Invalid input, shows error message and prompts user to enter again
+            #If Invalid input, prompts user to enter again
             if not isinstance(num2, float):
                 raise ValueError
             break
         except ValueError:
+            #clears user's initial input
+            num2_entry.delete(0, tkinter.END)
+            #Shows pop-up error message
             return messagebox.showerror("Error on Second Number Entry", "Invalid Input, Please Enter a Number")
      # Performing the addition operation 
     if operation == 1:
