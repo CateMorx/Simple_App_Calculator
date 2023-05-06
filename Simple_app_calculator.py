@@ -83,3 +83,10 @@ operation_entry_label.pack()
 operation_entry = tkinter.Entry(window)
 operation_entry.pack()
 
+#Input widget for first number
+num1_entry = tkinter.Entry(window)
+num1_entry.pack()
+
+#Input widget for second number
+num2_entry = tkinter.Entry(window)
+num2_entry.pack()
