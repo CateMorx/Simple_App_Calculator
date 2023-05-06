@@ -42,7 +42,22 @@ def calculate():
             break
         except ValueError:
             return messagebox.showerror("Error on Second Number Entry", "Invalid Input, Please Enter a Number")
-    # Performing the calculations
+     # Performing the addition operation 
+    if operation == 1:
+        result = num1 + num2
+        result_label.config(text="Result: " + str(result))
+    # Performing the subtraction operation 
+    elif operation == 2:
+        result = num1 - num2
+        result_label.config(text="Result: " + str(result))
+    # Performing the multiplication operation 
+    elif operation == 3:
+        result = num1 * num2
+        result_label.config(text="Result: " + str(result))
+    # Performing the division operation 
+    elif operation == 4:
+            result = num1 / num2
+            result_label.config(text="Result: " + str(result))
 # Asking user if they want to try again or not
 #Prints Thank you and closes the program 
 # Create the GUI
