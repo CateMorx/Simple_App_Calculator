@@ -75,3 +75,11 @@ operation_label.pack()
 
 operation_options = tkinter.Label(window, text="1-Addition \n2-Subtraction \n3-Multiplication \n4-Division")
 operation_options.pack()
+
+#Input widget for operation
+operation_entry_label = tkinter.Label(window, text="Choose between the numbers 1-4:")
+operation_entry_label.pack()
+
+operation_entry = tkinter.Entry(window)
+operation_entry.pack()
+
