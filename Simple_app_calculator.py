@@ -66,3 +66,12 @@ def calculate():
         window.destroy()
 
 # Create the GUI
+window = tkinter.Tk()
+window.title("Calculator")
+
+#Label for operation options
+operation_label = tkinter.Label(window, text="Choose an operation:")
+operation_label.pack()
+
+operation_options = tkinter.Label(window, text="1-Addition \n2-Subtraction \n3-Multiplication \n4-Division")
+operation_options.pack()
